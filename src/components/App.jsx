@@ -10,7 +10,7 @@ function App() {
 			<header className="header"></header>
 				<main>
 					<section>
-						<h1>Hi React</h1>
+						<h1> Hey Web dev is cool! guys check it out</h1>
 					</section>
 				</main>
 				<Recipes />
