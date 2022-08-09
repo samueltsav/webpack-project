@@ -1,0 +1,24 @@
+/** @format */
+@use "variables" as *;
+@use "base" as *;
+@use "mixins" as *;
+
+
+.header {
+	background-image: linear-gradient(rgba($teal, 0.7), rgba($teal, 0.7)),
+		url(../images/wall.jpg);
+	width: auto;
+	background-size: cover;
+	background-position: center;
+	height: 96vh;
+	background-attachment: fixed;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+
+	clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+}
+
+.text_box {
+	@include abs_center;
+	width: 100%;
+	padding: 1rem 2rem;
+}

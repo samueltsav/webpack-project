@@ -1,20 +1,23 @@
 /** @format */
-import "../styles/index.css";
-import Recipes from "./Recipes";
 
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React from "react";
+import "../styles/index.scss";
+import Recipes from "./Recipes";
+import Home from "../pages/Home";
 
 function App() {
 	return (
 		<>
-			<header className="header"></header>
-				<main>
-					<section>
-						<h1> Hey Web dev is cool! guys check it out</h1>
-					</section>
-				</main>
-				<Recipes />
-			
+			<div className="App">
+				<BrowserRouter>
+					<Routes>
+						<Route path="/" element={<Home />} />
+						{/* <Route path="SignUp" element={<SignUp />} />
+						<Route path="Contact" element={<Contact />} /> */}
+					</Routes>
+				</BrowserRouter>
+			</div>
 		</>
 	);
 }

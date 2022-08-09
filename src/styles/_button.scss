@@ -1,0 +1,167 @@
+/** @format */
+
+@use "variables" as *;
+@use "base" as *;
+@use "mixins" as *;
+
+.btn {
+	&_link {
+		text-decoration: none;
+	}
+
+	&_primary {
+		
+		@include rel_center;
+
+		display: block;
+		font-size: $font-large;
+		text-align: center;
+		text-transform: capitalize;
+		border-radius: $btn-border-radius;
+		padding: $btn-padding;
+		font-weight: $btn-font-weight;
+		transition: background-color 0.3s, border 0.3s;
+		margin-top: 1rem;
+		color: $white;
+		border: 0.15rem solid $white;
+		background-color: transparent;
+
+		-webkit-animation-name: moveInTop;
+
+		animation-name: moveInTop;
+		-webkit-animation-duration: 3s;
+		animation-duration: 3s;
+		-webkit-animation-delay: 3s;
+		animation-delay: 3s;
+		-webkit-animation-timing-function: ease-in;
+		animation-timing-function: ease-in;
+
+		&:hover,
+		&:active {
+			background-color: $white;
+			border: 0.1rem solid $white;
+			color: $teal;
+		}
+	}
+
+	&_secondary {
+		&-solutions {
+			position: relative;
+			left: 20%;
+			margin-top: 3rem;
+		}
+		
+		&,
+		&:visited {
+			text-transform: capitalize;
+			position: relative;
+			padding: $btn-padding;
+			font-weight: $btn-font-weight;
+			display: inline-block;
+			font-size: $font-large;
+			background-color: $teal;
+			color: $white;
+			border: solid 0.1rem $teal;
+			transition: all 0.2s;
+			-webkit-transition: all 0.2s;
+			-moz-transition: all 0.2s;
+			-ms-transition: all 0.2s;
+			-o-transition: all 0.2s;
+			border-radius: $btn-border-radius;
+			-webkit-border-radius: $btn-border-radius;
+			-moz-border-radius: $btn-border-radius;
+			-ms-border-radius: $btn-border-radius;
+			-o-border-radius: $btn-border-radius;
+
+			//change for the <button> element
+			border: none;
+			cursor: pointer;
+		}
+
+		&:hover {
+			transform: translateY(-0.3rem);
+			box-shadow: 0 1rem 2rem rgba($black, 0.2);
+			-webkit-transform: translateY(-0.3rem);
+			-moz-transform: translateY(-0.3rem);
+			-ms-transform: translateY(-0.3rem);
+			-o-transform: translateY(-0.3rem);
+		}
+
+		&:active,
+		&:focus {
+			outline: none;
+			transform: translateY(-0.1rem);
+			box-shadow: 0 0.5rem 1rem rgba($black, 0.2);
+			-webkit-transform: translateY(-0.1rem);
+			-moz-transform: translateY(-0.1rem);
+			-ms-transform: translateY(-0.1rem);
+			-o-transform: translateY(-0.1rem);
+		}
+
+		&:after {
+			content: "";
+			height: 100%;
+			width: 100%;
+			border-radius: 10rem;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -1;
+			transition: all 0.5s;
+			-webkit-transition: all 0.5s;
+			-moz-transition: all 0.5s;
+			-ms-transition: all 0.5s;
+			-o-transition: all 0.5s;
+			border-radius: 10rem;
+			-webkit-border-radius: 10rem;
+			-moz-border-radius: 10rem;
+			-ms-border-radius: 10rem;
+			-o-border-radius: 10rem;
+		}
+
+		&:after {
+			background-color: $teal;
+		}
+
+		&:hover:after {
+			transform: scaleX(1.6) scaleY(1.8);
+			opacity: 0;
+			-webkit-transform: scaleX(1.6) scaleY(1.8);
+			-moz-transform: scaleX(1.6) scaleY(1.8);
+			-ms-transform: scaleX(1.6) scaleY(1.8);
+			-o-transform: scaleX(1.6) scaleY(1.8);
+		}
+	}
+
+	@-webkit-keyframes moveInTop {
+		0% {
+			opacity: 0;
+			transform: translateY(10rem);
+		}
+
+		80% {
+			transform: translateY(-0.5rem);
+		}
+
+		100% {
+			opacity: 1;
+			transform: translate(0);
+		}
+	}
+
+	@keyframes moveInTop {
+		0% {
+			opacity: 0;
+			transform: translateY(10rem);
+		}
+
+		80% {
+			transform: translateY(-0.5rem);
+		}
+
+		100% {
+			opacity: 1;
+			transform: translate(0);
+		}
+	}
+}
