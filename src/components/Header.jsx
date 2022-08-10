@@ -1,15 +1,15 @@
 /** @format */
 
 import React from "react";
-import ButtonPrimary from "./ButtonPrimary";
-import Navbar from "./Navbar";
+import ButtonPrimary from "./reusables/ButtonPrimary";
+import Navbar from "./reusables/Navbar";
 
 function Header() {
 	return (
 		<>
 			<header className="header">
 				{<Navbar />}
-				<div className="text_box">
+				<div className="header_box">
 					<h1 className="heading_primary">
 						<span className="heading_primary-main">
 							FODISO

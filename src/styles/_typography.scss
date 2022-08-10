@@ -1,3 +1,4 @@
+/** @format */
 
 @use "variables" as *;
 @use "base" as *;
@@ -45,10 +46,11 @@
 			animation-timing-function: ease-out;
 		}
 	}
+
 	&_secondary {
 		font-size: $font-xxlarge;
 		color: $teal;
-		text-transform: uppercase;
+		text-transform: capitalize;
 		text-align: center;
 		margin-top: 2rem;
 		margin-bottom: 2rem;
@@ -59,33 +61,14 @@
 			transform: skewX(2deg) skew(10deg) scale(1.1);
 			transition: transform 0.3s;
 		}
-
-		&-partners {
-			color: $teal;
-		}
-	}
-
-	&_tertiary {
-		font-size: $font-xlarge;
-		text-transform: capitalize;
-		color: $white;
-		font-weight: 400;
-
-		&-solutions {
-			color: $teal;
-			font-size: $font-xlarge;
-			font-weight: 400;
-			text-align: center;
-			margin-bottom: 1rem;
-		}
 	}
 }
 
 .long_copy {
-    max-width: 70%;
-    margin-bottom: 2rem;
-    position: relative;
-    top: 0%;
-    left: 50%;
-    transform: translate(-50%, 0%);
+	max-width: 70%;
+	margin-bottom: 2rem;
+	position: relative;
+	top: 0%;
+	left: 50%;
+	transform: translate(-50%, 0%);
 }

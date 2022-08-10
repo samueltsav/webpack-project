@@ -10,7 +10,6 @@
 	}
 
 	&_primary {
-		
 		@include rel_center;
 
 		display: block;
@@ -27,7 +26,6 @@
 		background-color: transparent;
 
 		-webkit-animation-name: moveInTop;
-
 		animation-name: moveInTop;
 		-webkit-animation-duration: 3s;
 		animation-duration: 3s;
@@ -35,6 +33,8 @@
 		animation-delay: 3s;
 		-webkit-animation-timing-function: ease-in;
 		animation-timing-function: ease-in;
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
 
 		&:hover,
 		&:active {
@@ -45,12 +45,11 @@
 	}
 
 	&_secondary {
-		&-solutions {
-			position: relative;
-			left: 20%;
-			margin-top: 3rem;
+		&-products {
+			@include abs_center;
+			margin-top: 2rem;
 		}
-		
+
 		&,
 		&:visited {
 			text-transform: capitalize;

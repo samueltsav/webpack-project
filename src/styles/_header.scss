@@ -17,7 +17,7 @@
 	clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
 }
 
-.text_box {
+.header_box {
 	@include abs_center;
 	width: 100%;
 	padding: 1rem 2rem;

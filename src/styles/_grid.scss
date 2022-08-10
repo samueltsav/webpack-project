@@ -1,7 +1,8 @@
 /** @format */
 
 @use "variables" as *;
-
+@use "base" as *;
+@use "mixins" as *;
 .row {
 	max-width: $grid-width;
 
