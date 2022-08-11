@@ -1,0 +1,35 @@
+
+@use "variables" as *;
+@use "base" as *;
+@use "mixins" as *;
+
+.footer {
+	line-height: 2;
+	padding: 2rem;
+	background-color: $darkGray;
+	color: $darkWhite;
+
+	&_heading {
+		text-transform: capitalize;
+	}
+
+	&_link {
+		color: $darkWhite;
+		text-decoration: none;
+
+		& li {
+			display: block;
+			text-transform: capitalize;
+		}
+
+		& li:hover {
+			color: $tealDark;
+			transition: all 0.2s;
+		}
+	}
+}
+
+.copyright {
+	margin-top: 3rem;
+	text-align: center;
+}

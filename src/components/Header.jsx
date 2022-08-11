@@ -1,7 +1,7 @@
 /** @format */
 
 import React from "react";
-import ButtonPrimary from "./reusables/ButtonPrimary";
+import { Link } from "react-router-dom";
 import Navbar from "./reusables/Navbar";
 
 function Header() {
@@ -11,14 +11,14 @@ function Header() {
 				{<Navbar />}
 				<div className="header_box">
 					<h1 className="heading_primary">
-						<span className="heading_primary-main">
-							FODISO
-						</span>
-						<span className="heading_primary-sub">
-							School administrator
-						</span>
+						<span className="heading_primary-main">FODISO</span>
+						<span className="heading_primary-sub">School administrator</span>
 					</h1>
-					{<ButtonPrimary btn_name="Make Enquiry" />}
+					<Link to="/Contact" className="btn_link">
+						<button className="btn_primary">
+							Make Enquiry
+						</button>
+					</Link>
 				</div>
 			</header>
 		</>

@@ -42,11 +42,35 @@
 			border: 0.1rem solid $white;
 			color: $teal;
 		}
+
+		&-2 {
+			display: block;
+		font-size: $font-large;
+		text-align: center;
+		text-transform: capitalize;
+		border-radius: $btn-border-radius;
+		padding: $btn-padding;
+		font-weight: $btn-font-weight;
+		transition: background-color 0.3s, border 0.3s;
+		margin-top: 3rem;
+		color: $white;
+		border: 0.15rem solid $teal;
+		background-color: $teal;
+
+		@include rel_center;
+
+		&:hover,
+		&:active {
+			background-color: $white;
+			border: 0.1rem solid $teal;
+			color: $teal;
+		}
+		}
 	}
 
 	&_secondary {
 		&-products {
-			@include abs_center;
+			//@include abs_center;
 			margin-top: 2rem;
 		}
 

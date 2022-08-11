@@ -3,56 +3,43 @@
 import React from "react";
 import TextBox from "./reusables/Textbox";
 import { Link } from "react-router-dom";
-import ButtonSecondary from "./reusables/ButtonSecondary";
+
 
 function Products() {
 	return (
 		<>
 			<section className="products">
 				<div className="row">
-					<em>
-						<h2 className="heading_secondary">
-							our products are tailored just for you
-						</h2>
-					</em>
+					<h2 className="heading_secondary">
+						our products are tailored just for you
+					</h2>
+
 					<div className="col-1-of-3">
 						<TextBox
 							heading="compute-based testing"
 							paragraph="Lobortis, consectetuer integer felis ridiculus nisl porttitor
 								bibendum placerat fringilla duis quisque conubia ad. Conubia at.
 								Tempor. Dolor rutrum odio sit nullam convallis. Urna vehicula
-								arcu nam. Laoreet sollicitudin erat. Metus. Platea faucibus
-								integer facilisis, odio suspendisse metus et suscipit class
-								malesuada taciti torquent dictum. Mollis quis consequat sociis
-								aliquam elit integer tellus consequat curabitur dictum feugiat.
-								Nostra mauris penatibus non dolor aptent mauris. Est. Gravida
-								augue. Dictum non purus montes tristique auctor consequat sapien
-								est ultricies vivamus neque sociis ultrices bibendum. Eu egestas
-								lacus, luctus morbi Metus a ullamcorper. Turpis suspendisse
-								libero scelerisque risus iaculis velit pharetra nisl"
+								arcu nam."
 						></TextBox>
-						<Link to="/" className="btn_link">
-							{<ButtonSecondary btn_name="Sign Up" />}
+						<Link to="/SignUp" className="btn_link">
+							<button className="btn_primary-2">
+								Sign up
+							</button>
 						</Link>
 					</div>
+
 					<div className="col-1-of-3">
 						<TextBox
 							heading="school fees management"
 							paragraph="Lobortis, consectetuer integer felis ridiculus nisl porttitor
 								bibendum placerat fringilla duis quisque conubia ad. Conubia at.
-								Tempor. Dolor rutrum odio sit nullam convallis. Urna vehicula
-								arcu nam. Laoreet sollicitudin erat. Metus. Platea faucibus
-								integer facilisis, odio suspendisse metus et suscipit class
-								malesuada taciti torquent dictum. Mollis quis consequat sociis
-								aliquam elit integer tellus consequat curabitur dictum feugiat.
-								Nostra mauris penatibus non dolor aptent mauris. Est. Gravida
-								augue. Dictum non purus montes tristique auctor consequat sapien
-								est ultricies vivamus neque sociis ultrices bibendum. Eu egestas
-								lacus, luctus morbi Metus a ullamcorper. Turpis suspendisse
-								libero scelerisque risus iaculis velit pharetra nisl"
+								Tempor. Dolor rutrum odio sit nullam convallis."
 						></TextBox>
-						<Link to="/" className="btn_link">
-							{<ButtonSecondary btn_name="Sign Up" />}
+						<Link to="/SignUp" className="btn_link">
+							<button className="btn_primary-2">
+								Sign up
+							</button>
 						</Link>
 					</div>
 					<div className="col-1-of-3">
@@ -63,16 +50,12 @@ function Products() {
 								Tempor. Dolor rutrum odio sit nullam convallis. Urna vehicula
 								arcu nam. Laoreet sollicitudin erat. Metus. Platea faucibus
 								integer facilisis, odio suspendisse metus et suscipit class
-								malesuada taciti torquent dictum. Mollis quis consequat sociis
-								aliquam elit integer tellus consequat curabitur dictum feugiat.
-								Nostra mauris penatibus non dolor aptent mauris. Est. Gravida
-								augue. Dictum non purus montes tristique auctor consequat sapien
-								est ultricies vivamus neque sociis ultrices bibendum. Eu egestas
-								lacus, luctus morbi Metus a ullamcorper. Turpis suspendisse
-								libero scelerisque risus iaculis velit pharetra nisl"
+								malesuada taciti torquent dictum."
 						></TextBox>
-						<Link to="/" className="btn_link">
-							{<ButtonSecondary btn_name="Sign Up" />}
+						<Link to="/SignUp" className="btn_link">
+							<button className="btn_primary-2">
+								Sign up
+							</button>
 						</Link>
 					</div>
 				</div>

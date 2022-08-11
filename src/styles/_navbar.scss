@@ -3,7 +3,7 @@
 
 
 nav {
-	background: $darkGray;
+	background: $teal;
 	padding: 0.2rem 2rem;
 }
 
@@ -58,7 +58,7 @@ ul {
 
 .menu-bars {
 	color: $white;
-	font-size: $font-xlarge;
+	font-size: $font-xxlarge;
 }
 
 .nav-item.nav-item_btn {
@@ -96,13 +96,16 @@ ul {
 
 	.nav-link_btn {
 		padding: 0.3rem 0.8rem;
-		background-color: $teal;
+		background-color: transparent;
+		border: .15rem solid $white;
 		border-radius: 2rem;
 	}
 
 	.nav-link_btn:hover {
 		text-decoration: none;
-		background-color: transparent;
+		background-color: $white;
+		border: .15rem solid $white;
+		color: $teal;
 		transition: all 0.25s;
 	}
 }

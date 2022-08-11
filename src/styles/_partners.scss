@@ -1,0 +1,13 @@
+@use "variables" as *;
+@use "base" as *;
+@use "mixins" as *;
+
+.partners_logo {
+    height: 10vh;
+    width: 15vh;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    
+}

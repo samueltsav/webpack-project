@@ -1,0 +1,29 @@
+@use "variables" as *;
+@use "base" as *;
+@use "mixins" as *;
+
+
+.services {
+    background-color: $lightGray;
+    &_paragraph {
+        text-align: justify;
+        max-width: 80%;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    
+    }
+    &_photo {
+        	position: relative;
+		top: 0%;
+		left: 50%;
+		transform: translate(-50%, 0%);
+		height: 15rem;
+		width: 15rem;
+		display: block;
+		border-radius: 1rem;
+		margin-top: 3rem;
+        margin-bottom: 1rem;
+    }
+}

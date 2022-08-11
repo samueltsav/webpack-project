@@ -4,6 +4,7 @@
 @use "base" as *;
 
 .text_box {
+	min-height: 30rem;
 	background-color: $white;
 	padding: 2.5rem;
 	margin-top: 1rem;
