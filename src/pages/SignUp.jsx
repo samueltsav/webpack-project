@@ -69,11 +69,7 @@ function SignUp() {
 						</div>
 						<div className="form_group">
 							<div className="btn">
-								<Link to="/" className="btn_link">
-									<button className="btn_primary-2">
-										Submit
-									</button>
-								</Link>
+								<button className="btn_primary-2">Submit</button>
 							</div>
 						</div>
 					</form>

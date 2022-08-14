@@ -66,11 +66,14 @@
 
 .long_copy {
 	font-size: $font-large;
-	max-width: 60%;
 	margin-bottom: 2rem;
 	text-align: justify;
 	position: relative;
 	top: 0%;
 	left: 50%;
 	transform: translate(-50%, 0%);
+
+	@media only screen and (min-width:768px) {
+		max-width: 70%;
+	}
 }

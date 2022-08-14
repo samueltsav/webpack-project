@@ -20,12 +20,12 @@ function Navbar() {
 						</Link>
 					</li>
 					<li className="nav-item">
-						<Link to="/Contact" className="nav-link">
+						<Link to="/" className="nav-link">
 							services
 						</Link>
 					</li>
 					<li className="nav-item">
-						<Link to="/Contact" className="nav-link">
+						<Link to="/" className="nav-link">
 							Products
 						</Link>
 					</li>
