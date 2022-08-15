@@ -20,6 +20,7 @@ const plugins = [
 		plugins.push(new ReactRefreshWebpackPlugin());
 }
 
+
 	module.exports = {
 		mode: mode,
 entry: "./src/index.js",

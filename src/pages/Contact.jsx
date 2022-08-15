@@ -6,6 +6,31 @@ import Footer from "../components/reusables/Footer";
 import Navbar from "../components/reusables/Navbar";
 
 function Contact() {
+	const [formData, setFormData] = React.useState(
+		{
+		name: "",
+		email: "",
+		phoneNumber: "",
+		message: "",
+		}
+	);
+
+	console.log(formData)
+
+	function handleChange(event) {
+		setFormData(prevFormData => {
+			return {
+				...prevFormData,
+				[event.target.name]: event.target.value,
+			};
+		})
+	}
+
+	function handleSubmit(event) {
+		event.preventDefault()
+		console.log(formData)
+	}
+
 	return (
 		<>
 			{<Navbar />}
@@ -23,7 +48,7 @@ function Contact() {
 				</div>
 				<div className="row">
 					<div className="contact">
-						<form action="" method="POST" className="contact_form">
+						<form onSubmit={handleSubmit} className="contact_form">
 							<div className="form_group">
 								<input
 									type="text"
@@ -32,8 +57,10 @@ function Contact() {
 									id="name"
 									placeholder="Your full name"
 									required
+									onChange={handleChange}
+									value={formData.name}
 								/>
-								<label for="name" className="form_label">
+								<label htmlFor="name" className="form_label">
 									Name
 								</label>
 							</div>
@@ -45,21 +72,25 @@ function Contact() {
 									id="email"
 									placeholder="Your email address"
 									required
+									onChange={handleChange}
+									value={formData.email}
 								/>
-								<label for="email" className="form_label">
+								<label htmlFor="email" className="form_label">
 									Email address
 								</label>
 							</div>
 							<div className="form_group">
 								<input
 									type="text"
-									name="contact"
+									name="phoneNumber"
 									className="form_input"
 									id="contact"
 									placeholder="Your phone number"
 									required
+									onChange={handleChange}
+									value={formData.phoneNumber}
 								/>
-								<label for="contact" className="form_label">
+								<label htmlFor="PhoneNumbert" className="form_label">
 									Phone number
 								</label>
 							</div>
@@ -72,8 +103,10 @@ function Contact() {
 									placeholder="Write your message here"
 									className="form_input"
 									required
-								></textarea>
-								<label for="message" className="form_label">
+									onChange={handleChange}
+									value={formData.message}
+								/>
+								<label htmlFor="message" className="form_label">
 									Message
 								</label>
 							</div>
